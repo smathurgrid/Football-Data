@@ -1,6 +1,4 @@
 # Python & Data
-*.ipynb
-*.csv
 *.txt
 __pycache__/
 
