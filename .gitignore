@@ -1,0 +1,15 @@
+# Python & Data
+*.ipynb
+*.csv
+*.txt
+__pycache__/
+
+# Virtual Environments
+venv/
+venv_ds/
+.venv/
+env/
+
+# Editor / OS
+.vscode/
+.DS_Store
