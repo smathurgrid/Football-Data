@@ -1,691 +1,693 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Beating the House: How Underdogs Broke the Betting Market in the 2005/06 Premier League</title>
-    <style>
-        body {
-            font-family: "Georgia", serif;
-            line-height: 1.8;
-            color: #333;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 40px;
-            background-color: #f4f4f4;
-            border: 1px solid #eee;
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Beating the House: How Underdogs Broke the Betting Market in the 2005/06 Premier League</title>
+        <style>
+            body {
+                font-family: "Georgia", serif;
+                line-height: 1.8;
+                color: #333;
+                max-width: 900px;
+                margin: 40px auto;
+                padding: 40px;
+                background-color: #f4f4f4;
+                border: 1px solid #eee;
+            }
+
+            h1 {
+                font-size: 32px;
+                text-align: center;
+                border-bottom: 2px solid #333;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+
+            .subtitle {
+                text-align: center;
+                font-style: italic;
+                color: #666;
+                margin-bottom: 40px;
+                font-size: 1.1em;
+            }
+
+            h2 {
+                font-size: 22px;
+                margin-top: 50px;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 5px;
+                color: #111;
+            }
+
+            p {
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+
+            .visual {
+                margin: 40px 0;
+                text-align: center;
+            }
+
+            .visual img {
+                width: 70%;          /* reduced from 100% */
+                max-width: 650px;    /* prevents oversized images */
+                height: auto;
+                border: 1px solid #f1f1f1;
+            }
+
+
+
+            .caption {
+                font-size: 14px;
+                color: #888;
+                margin-top: 10px;
+                font-style: italic;
+            }
+
+            .qa-box {
+                background:#ffffff;
+                padding: 25px;
+                border: 1px solid #eee;
+                margin: 35px 0;
+            }
+
+            .bold {
+                font-weight: bold;
+                color: #000;
+            }
+
+            .highlight-box {
+                background: #f7f7f7;
+                padding: 25px;
+                border-left: 4px solid #333;
+                margin: 40px 0;
+            }
+
+            .metrics {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                margin: 30px 0 50px;
+            }
+
+            .metric {
+                flex: 1;
+                text-align: center;
+                padding: 20px;
+                background: #fafafa;
+                border: 1px solid #eee;
+            }
+
+            .metric span {
+                display: block;
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            ul {
+                margin-bottom: 20px;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            .conclusion-box {
+                background: #f9f9f9;
+                padding: 35px;
+                border-top: 3px solid #333;
+                margin-top: 60px;
+            }
+
+            .note {
+                font-size: 14px;
+                color: #666;
+                font-style: italic;
+                margin-top: 10px;
+            }
+            /* SECTION-BASED STORYTELLING (SUBTLE, PROFESSIONAL) */
+        .section {
+                min-height: 100vh;
+                padding: 60px;
+                margin: 60px 0;
+                background: #ffffff;              /* card color */
+                color: #333;
+                border-radius: 16px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;        
+
+                scroll-snap-align: start;
+                scroll-snap-stop: normal;
+
+                opacity: 1;                /* visible by default */
+                transform: translateY(0);
+                transition: opacity 0.8s ease, transform 0.8s ease;
+            }
+            .section.animate {
+            opacity: 0;
+            transform: translateY(30px);
         }
 
-        h1 {
-            font-size: 32px;
-            text-align: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            text-align: center;
-            font-style: italic;
-            color: #666;
-            margin-bottom: 40px;
-            font-size: 1.1em;
-        }
-
-        h2 {
-            font-size: 22px;
-            margin-top: 50px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-            color: #111;
-        }
-
-        p {
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-
-        .visual {
-            margin: 40px 0;
-            text-align: center;
-        }
-
-        .visual img {
-            width: 70%;          /* reduced from 100% */
-            max-width: 650px;    /* prevents oversized images */
-            height: auto;
-            border: 1px solid #f1f1f1;
-        }
-
-
-
-        .caption {
-            font-size: 14px;
-            color: #888;
-            margin-top: 10px;
-            font-style: italic;
-        }
-
-        .qa-box {
-            background:#ffffff;
-            padding: 25px;
-            border: 1px solid #eee;
-            margin: 35px 0;
-        }
-
-        .bold {
-            font-weight: bold;
-            color: #000;
-        }
-
-        .highlight-box {
-            background: #f7f7f7;
-            padding: 25px;
-            border-left: 4px solid #333;
-            margin: 40px 0;
-        }
-
-        .metrics {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            margin: 30px 0 50px;
-        }
-
-        .metric {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-            background: #fafafa;
-            border: 1px solid #eee;
-        }
-
-        .metric span {
-            display: block;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        ul {
-            margin-bottom: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .conclusion-box {
-            background: #f9f9f9;
-            padding: 35px;
-            border-top: 3px solid #333;
-            margin-top: 60px;
-        }
-
-        .note {
-            font-size: 14px;
-            color: #666;
-            font-style: italic;
-            margin-top: 10px;
-        }
-        /* SECTION-BASED STORYTELLING (SUBTLE, PROFESSIONAL) */
-       .section {
-            min-height: 100vh;
-            padding: 60px;
-            margin: 60px 0;
-            background: #ffffff;              /* card color */
-            color: #333;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;        
-
-            scroll-snap-align: start;
-            scroll-snap-stop: normal;
-
-            opacity: 1;                /* visible by default */
+        .section.animate.visible {
+            opacity: 1;
             transform: translateY(0);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
-        .section.animate {
-        opacity: 0;
-        transform: translateY(30px);
-    }
 
-    .section.animate.visible {
+            /* .section h1,
+            .section h2,
+            .section h3 {
+                color: #ffffff;
+            }
+
+            .section p,
+            .section li {
+                color: #e0e0e0;
+            } */
+
+            .section .section-intro {
+                color: #bbbbbb;
+            }
+
+            .section .caption,
+            .section .note {
+                color: #aaaaaa;
+            }
+
+            /* Summary & highlight boxes inside dark cards */
+            .section .qa-box,
+            .section .highlight-box {
+            background: #f7f7f7;     /* soft light grey */
+            order: 1px solid #e0e0e0;
+            }
+
+            body {
+                scroll-snap-type: y proximity;
+    }
+        .section.visible {
         opacity: 1;
         transform: translateY(0);
-        transition: opacity 0.8s ease, transform 0.8s ease;
     }
 
-        /* .section h1,
-        .section h2,
-        .section h3 {
-            color: #ffffff;
-        }
+        
+            
 
-        .section p,
-        .section li {
-            color: #e0e0e0;
-        } */
 
-        .section .section-intro {
-            color: #bbbbbb;
-        }
+        </style>
+        <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 
-        .section .caption,
-        .section .note {
-            color: #aaaaaa;
-        }
+    </head>
 
-        /* Summary & highlight boxes inside dark cards */
-        .section .qa-box,
-        .section .highlight-box {
-        background: #f7f7f7;     /* soft light grey */
-        order: 1px solid #e0e0e0;
-        }
-
-        body {
-            scroll-snap-type: y proximity;
-}
-    .section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-       
+    <body>
         
 
 
-    </style>
-    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+        <h1>Beating the House: How Underdogs Broke the Betting Market in the 2005/06 Premier League</h1>
+        <div class="subtitle">Decoding why favorites fail and how underdogs consistently outperform expectations</div>
 
-</head>
+        <!-- ADDED: Executive Summary -->
+        <div class="section">
 
-<body>
-    
+        <div class="highlight-box">
+            <h2>Executive Summary</h2>
+            <p><span class="bold">Objective:</span> Evaluate whether betting odds reliably predict match outcomes.</p>
+            <p><span class="bold">Key Insight:</span> Favorites failed to win in <span class="bold">41.8%</span> of matches (159 out of 380).</p>
+            <p><span class="bold">Why it Happens:</span> Home advantage, defensive discipline, and psychological pressure are underestimated by the market.</p>
+            <p><span class="bold">Recommendation:</span> Avoid relying solely on odds; incorporate venue and resilience indicators into decision-making.</p>
+            <p><span class="bold">Audience:</span> This analysis is written for analysts, bettors, and decision-makers
+                who rely on betting odds to assess match risk and expected outcomes.</p>
 
-
-    <h1>Beating the House: How Underdogs Broke the Betting Market in the 2005/06 Premier League</h1>
-    <div class="subtitle">Decoding why favorites fail and how underdogs consistently outperform expectations</div>
-
-    <!-- ADDED: Executive Summary -->
-     <div class="section">
-
-    <div class="highlight-box">
-        <h2>Executive Summary</h2>
-        <p><span class="bold">Objective:</span> Evaluate whether betting odds reliably predict match outcomes.</p>
-        <p><span class="bold">Key Insight:</span> Favorites failed to win in <span class="bold">41.8%</span> of matches (159 out of 380).</p>
-        <p><span class="bold">Why it Happens:</span> Home advantage, defensive discipline, and psychological pressure are underestimated by the market.</p>
-        <p><span class="bold">Recommendation:</span> Avoid relying solely on odds; incorporate venue and resilience indicators into decision-making.</p>
-        <p><span class="bold">Audience:</span> This analysis is written for analysts, bettors, and decision-makers
-            who rely on betting odds to assess match risk and expected outcomes.</p>
-
-    </div>
-
-    <!-- ADDED: Key Metrics -->
-    <div class="metrics">
-        <div class="metric">
-            <span>380</span>
-            Matches Analyzed
         </div>
-        <div class="metric">
-            <span>41.8%</span>
-            Favorite Failure Rate
+
+        <!-- ADDED: Key Metrics -->
+        <div class="metrics">
+            <div class="metric">
+                <span>380</span>
+                Matches Analyzed
+            </div>
+            <div class="metric">
+                <span>41.8%</span>
+                Favorite Failure Rate
+            </div>
+            <div class="metric">
+                <span>29</span>
+                Max Underdog Points
+            </div>
         </div>
-        <div class="metric">
-            <span>29</span>
-            Max Underdog Points
         </div>
+    <hr class="section-divider">
+
+        <div class="section">
+
+        <h2>Introduction</h2>
+
+        <p class="section-intro">
+        This section sets the context for why betting odds are widely trusted and why that assumption
+        needs closer examination.
+        </p>
+
+
+        <p>In the high-stakes world of sports analytics, we are often told that the "house" always wins because their mathematical models are unbeatable. We assume that when a team is labeled a "Favorite," they are almost guaranteed to win. However, the 2005/06 Premier League season tells a different story. Much like famous historical upsets where the smaller side defeated the giant, this season shows that "experts" have a massive blind spot. By looking at the data from 380 matches, this report explores the "Efficiency Gap"—the space where favorites fail and underdogs thrive.</p>
+
+        <div class="qa-box">
+            <p class="bold">The Question:</p>
+            <p>Is the betting market actually reliable, or is there a systematic "Resilience Factor" in certain teams that the experts fail to see? We want to find out how often the favorites fail and which teams are the best at "Giant Slaying."</p>
+        </div>
+        </div>
+    <hr class="section-divider">
+
+        <div class="section">
+
+
+        <h2>The Macro View: When Favorites Fall</h2>
+
+        <p class="section-intro">
+        This section measures how often betting favorites fail across the season and establishes
+        the scale of the market’s prediction error.
+        </p>
+
+
+        <p>Our first discovery is that the market is far less predictable than people think. While bookmakers use complex formulas to set their odds, the predicted favorite failed to win in <span class="bold">41.8% of matches</span> (<span class="bold">159 out of 380 games</span>). This means that in nearly 4 out of 10 games, the "safe bet" was wrong. This "Volatility Zone" is where mid-table teams make their mark.</p>
+
+        <div class="visual">
+            <!-- <img src="1.png" alt="Market Reliability"> -->
+            <div id="figure1" style="width:100%; height:420px;"></div>
+
+            <div class="caption">Figure 1: Market Reliability showing the 41.8% rate at which favorites failed to win.</div>
+        </div>
+        <p>
+        This pattern raises an important question: if favorites fail so often, what exactly do
+        underdog teams do differently? To answer this, we compare how favorites and underdogs
+        accumulate points over a season and identify the key factors that separate their
+        performance.
+        </p>
+
+
+        <p class="note">
+        To move beyond surface-level upsets, the next section compares how favorites and underdogs
+        generate points over a full season. This reveals the structural differences that betting
+        markets tend to overlook.
+        </p>
+        <div class="qa-box">
+        <p class="bold">Key Insight:</p>
+        <p>
+        Nearly 4 out of 10 matches fall into a volatility zone where the betting favorite does not win,
+        suggesting that market confidence frequently overestimates match certainty.
+        </p>
+        </div>
+        </div>
+        <hr class="section-divider">
+
+
+        <div class="section">
+
+        <h2>Why Underdogs Outperform Expectations: The Key Differences from Favorites</h2>
+        <p class="section-intro">
+        This section explains why underdogs consistently outperform market expectations by
+        comparing how favorites and underdogs accumulate points across a season.
+        </p>
+
+        <p>
+        The repeated failure of favorites is not driven by random upsets or isolated performances.
+        A closer comparison between favorites and underdogs reveals clear differences in how these
+        teams generate value over a season. These differences represent the core factors that
+        separate underdogs from favorites in the betting market.
+        </p>
+
+    <h3>Differential Factor 1: Home Advantage Has a Disproportionate Impact on Underdogs</h3>
+
+        <p>
+        While home advantage exists for all teams, its impact is significantly stronger for
+        underdogs than for favorites. Underdogs earn a much larger share of their total points
+        when playing at home, whereas favorites show relatively stable performance regardless of
+        venue.
+        </p>
+
+        <p>
+        This suggests that contextual factors such as crowd support, reduced pressure, and familiar
+        playing conditions disproportionately benefit underdogs. These effects are often
+        underestimated in betting models, creating opportunities for underdog teams to outperform
+        expectations.
+        </p>
+
+    <h3>Differential Factor 2: Underdogs Accumulate Points by Avoiding Losses, Not by Winning</h3>
+
+        <p>
+        A second major difference lies in how points are accumulated. Favorites primarily justify
+        their odds through outright wins. Underdogs, however, generate a substantial portion of
+        their points through draws rather than victories.
+        </p>
+
+        <p>
+        Instead of attempting to dominate stronger opponents, successful underdogs focus on
+        defensive discipline and game management. In practice, <strong>refusing to lose</strong>
+        consistently proves more valuable than chasing unlikely wins.
+        </p>
+        <p>
+        These structural differences explain why certain teams are able to consistently outperform
+        market expectations. The next section highlights which clubs were most effective at
+        exploiting these factors during the 2005/06 season.
+        </p>
+        <div class="qa-box">
+        <p class="bold">Combined Insight:</p>
+        <p>
+            The performance gap between favorites and underdogs is driven by structure, not chance.
+            Underdogs gain disproportionate value from home advantage and consistently accumulate
+            points by avoiding losses rather than chasing wins. Together, these factors reveal a
+            repeatable strategy that betting markets systematically underestimate.
+        </p>
     </div>
-    </div>
-<hr class="section-divider">
 
-    <div class="section">
-
-    <h2>Introduction</h2>
-
-    <p class="section-intro">
-    This section sets the context for why betting odds are widely trusted and why that assumption
-    needs closer examination.
-    </p>
-
-
-    <p>In the high-stakes world of sports analytics, we are often told that the "house" always wins because their mathematical models are unbeatable. We assume that when a team is labeled a "Favorite," they are almost guaranteed to win. However, the 2005/06 Premier League season tells a different story. Much like famous historical upsets where the smaller side defeated the giant, this season shows that "experts" have a massive blind spot. By looking at the data from 380 matches, this report explores the "Efficiency Gap"—the space where favorites fail and underdogs thrive.</p>
-
-    <div class="qa-box">
-        <p class="bold">The Question:</p>
-        <p>Is the betting market actually reliable, or is there a systematic "Resilience Factor" in certain teams that the experts fail to see? We want to find out how often the favorites fail and which teams are the best at "Giant Slaying."</p>
-    </div>
-    </div>
-<hr class="section-divider">
-
-    <div class="section">
-
-
-    <h2>The Macro View: When Favorites Fall</h2>
-
-    <p class="section-intro">
-    This section measures how often betting favorites fail across the season and establishes
-    the scale of the market’s prediction error.
-    </p>
-
-
-    <p>Our first discovery is that the market is far less predictable than people think. While bookmakers use complex formulas to set their odds, the predicted favorite failed to win in <span class="bold">41.8% of matches</span> (<span class="bold">159 out of 380 games</span>). This means that in nearly 4 out of 10 games, the "safe bet" was wrong. This "Volatility Zone" is where mid-table teams make their mark.</p>
-
-    <div class="visual">
-        <!-- <img src="1.png" alt="Market Reliability"> -->
-        <div id="figure1" style="width:100%; height:420px;"></div>
-
-        <div class="caption">Figure 1: Market Reliability showing the 41.8% rate at which favorites failed to win.</div>
-    </div>
-    <p>
-    This pattern raises an important question: if favorites fail so often, what exactly do
-    underdog teams do differently? To answer this, we compare how favorites and underdogs
-    accumulate points over a season and identify the key factors that separate their
-    performance.
-    </p>
-
-
-    <p class="note">
-    To move beyond surface-level upsets, the next section compares how favorites and underdogs
-    generate points over a full season. This reveals the structural differences that betting
-    markets tend to overlook.
-    </p>
-    <div class="qa-box">
-    <p class="bold">Key Insight:</p>
-    <p>
-    Nearly 4 out of 10 matches fall into a volatility zone where the betting favorite does not win,
-    suggesting that market confidence frequently overestimates match certainty.
-    </p>
-    </div>
     </div>
     <hr class="section-divider">
 
 
-    <div class="section">
-
-    <h2>Why Underdogs Outperform Expectations: The Key Differences from Favorites</h2>
-    <p class="section-intro">
-    This section explains why underdogs consistently outperform market expectations by
-    comparing how favorites and underdogs accumulate points across a season.
-    </p>
-
-    <p>
-    The repeated failure of favorites is not driven by random upsets or isolated performances.
-    A closer comparison between favorites and underdogs reveals clear differences in how these
-    teams generate value over a season. These differences represent the core factors that
-    separate underdogs from favorites in the betting market.
-    </p>
-
-<h3>Differential Factor 1: Home Advantage Has a Disproportionate Impact on Underdogs</h3>
-
-    <p>
-    While home advantage exists for all teams, its impact is significantly stronger for
-    underdogs than for favorites. Underdogs earn a much larger share of their total points
-    when playing at home, whereas favorites show relatively stable performance regardless of
-    venue.
-    </p>
-
-    <p>
-    This suggests that contextual factors such as crowd support, reduced pressure, and familiar
-    playing conditions disproportionately benefit underdogs. These effects are often
-    underestimated in betting models, creating opportunities for underdog teams to outperform
-    expectations.
-    </p>
-
-<h3>Differential Factor 2: Underdogs Accumulate Points by Avoiding Losses, Not by Winning</h3>
-
-    <p>
-    A second major difference lies in how points are accumulated. Favorites primarily justify
-    their odds through outright wins. Underdogs, however, generate a substantial portion of
-    their points through draws rather than victories.
-    </p>
-
-    <p>
-    Instead of attempting to dominate stronger opponents, successful underdogs focus on
-    defensive discipline and game management. In practice, <strong>refusing to lose</strong>
-    consistently proves more valuable than chasing unlikely wins.
-    </p>
-    <p>
-    These structural differences explain why certain teams are able to consistently outperform
-    market expectations. The next section highlights which clubs were most effective at
-    exploiting these factors during the 2005/06 season.
-    </p>
-    <div class="qa-box">
-    <p class="bold">Combined Insight:</p>
-    <p>
-        The performance gap between favorites and underdogs is driven by structure, not chance.
-        Underdogs gain disproportionate value from home advantage and consistently accumulate
-        points by avoiding losses rather than chasing wins. Together, these factors reveal a
-        repeatable strategy that betting markets systematically underestimate.
-    </p>
-</div>
-
-</div>
-<hr class="section-divider">
-
-
-
-<div class="section">
-
-
-    <h2>The Answer: Identifying the Giant Slayers</h2>
-    <p class="section-intro">
-This section highlights the teams that most effectively exploited betting inefficiencies
-and consistently outperformed expectations as underdogs.
-</p>
-
-    <p>This market error isn't random. Some teams are simply better at performing when the pressure is off and they are expected to lose. Our data identifies <span class="bold">West Ham United</span> as the ultimate disruptor, earning a league-high <span class="bold">29 points</span> as an underdog. They were followed closely by <span class="bold">Middlesbrough (28)</span> and <span class="bold">Wigan (28)</span>.</p>
-
-    <div class="visual">
-        <!-- <img src="2.png" alt="Top Underdog Points"> -->
-        <div id="figure2" style="width:100%; height:450px;"></div>
-
-
-        <div class="caption">Figure 2: Points earned specifically as an Underdog. West Ham leads the league in surprise value.</div>
-    </div>
-
-    <p>Interestingly, the data shows that the biggest teams like <span class="bold">Arsenal and Chelsea earned 0 points as underdogs</span>. Because they were favorites in every game, they never had the chance to "upset" anyone. On the other hand, smaller teams like West Brom relied on these surprises for over 75% of their season success. This proves that for smaller clubs, "beating the house" isn't just luck—it’s a survival strategy.</p>
-
-    <div class="visual">
-        <img src="3.png" alt="Performance Quadrant">
-        <div class="caption">
-            Figure 3: Skill vs. Surprise. Mapping consistent giants against scrappy disruptors.
-            <div class="note">
-                Top-left quadrant represents high underdog impact with lower total points — the true "Giant Slayers."
-            </div>
-        </div>
-    </div>
-    
-    <div class="qa-box">
-    <p class="bold">Pattern Observed:</p>
-    <p>
-        Underdog success is not evenly distributed across the league. A small group of teams
-        repeatedly exploit market inefficiencies, suggesting that underdog performance
-        is driven by repeatable behavior rather than random upsets.
-    </p>
-    </div>
-</div>
-<hr class="section-divider">
 
     <div class="section">
 
-    <h2>The Tactics: The Underdog Home Advantage</h2>
-    <p class="section-intro">
-This section translates analytical insights into on-field tactics, showing how underdogs
-convert structural advantages into repeatable match outcomes.
-</p>
 
-    <p>Why does the market fail so consistently? One of the biggest reasons is the <strong>Home Factor</strong>. Our data shows two critical points about geography:</p>
-    <ul>
-        <li><span class="bold">The 12th Man Effect:</span> Underdogs are <span class="bold">40% more effective</span> when playing in their own stadium.</li>
-        <li><span class="bold">Venue Efficiency:</span> Favorites drop points more frequently when traveling to mid-table stadiums.</li>
-    </ul>
+        <h2>The Answer: Identifying the Giant Slayers</h2>
+        <p class="section-intro">
+    This section highlights the teams that most effectively exploited betting inefficiencies
+    and consistently outperformed expectations as underdogs.
+    </p>
 
-    <div class="visual">
-        <!-- <img src="5.png" alt="Venue Battle"> -->
-        <div id="figure4" style="width:100%; height:450px;"></div>
+        <p>This market error isn't random. Some teams are simply better at performing when the pressure is off and they are expected to lose. Our data identifies <span class="bold">West Ham United</span> as the ultimate disruptor, earning a league-high <span class="bold">29 points</span> as an underdog. They were followed closely by <span class="bold">Middlesbrough (28)</span> and <span class="bold">Wigan (28)</span>.</p>
 
-        <div class="caption">
-            Figure 4: Underdog points earned at Home vs. Away.
-            <div class="note">
-                While total away points are higher due to more fixtures, points per match are significantly higher for home underdogs.
+        <div class="visual">
+            <!-- <img src="2.png" alt="Top Underdog Points"> -->
+            <div id="figure2" style="width:100%; height:450px;"></div>
+
+
+            <div class="caption">Figure 2: Points earned specifically as an Underdog. West Ham leads the league in surprise value.</div>
+        </div>
+
+        <p>Interestingly, the data shows that the biggest teams like <span class="bold">Arsenal and Chelsea earned 0 points as underdogs</span>. Because they were favorites in every game, they never had the chance to "upset" anyone. On the other hand, smaller teams like West Brom relied on these surprises for over 75% of their season success. This proves that for smaller clubs, "beating the house" isn't just luck—it’s a survival strategy.</p>
+
+        <div class="visual">
+            <img src="3.png" alt="Performance Quadrant">
+            <div class="caption">
+                Figure 3: Skill vs. Surprise. Mapping consistent giants against scrappy disruptors.
+                <div class="note">
+                    Top-left quadrant represents high underdog impact with lower total points — the true "Giant Slayers."
+                </div>
             </div>
         </div>
+        
+        <div class="qa-box">
+        <p class="bold">Pattern Observed:</p>
+        <p>
+            Underdog success is not evenly distributed across the league. A small group of teams
+            repeatedly exploit market inefficiencies, suggesting that underdog performance
+            is driven by repeatable behavior rather than random upsets.
+        </p>
+        </div>
     </div>
+    <hr class="section-divider">
 
-    <h2>The Underdog Playbook: How Underdog Teams Win Matches</h2>
-<p>
-The data shows that underdog success is not driven by luck or one-off performances, but by
-a repeatable and disciplined strategic approach. Rather than attempting to outplay stronger
-teams, underdogs optimize for outcomes that the betting market tends to undervalue.
-</p>
+        <div class="section">
 
+        <h2>The Tactics: The Underdog Home Advantage</h2>
+        <p class="section-intro">
+    This section translates analytical insights into on-field tactics, showing how underdogs
+    convert structural advantages into repeatable match outcomes.
+    </p>
 
-    <!-- ADDED: Actionable Strategy -->
-    <div class="highlight-box">
-        <p class="bold">When to Play for the Draw:</p>
+        <p>Why does the market fail so consistently? One of the biggest reasons is the <strong>Home Factor</strong>. Our data shows two critical points about geography:</p>
         <ul>
-            <li>Facing Top 4 teams at home</li>
-            <li>Limited attacking resources</li>
-            <li>High crowd pressure environments</li>
+            <li><span class="bold">The 12th Man Effect:</span> Underdogs are <span class="bold">40% more effective</span> when playing in their own stadium.</li>
+            <li><span class="bold">Venue Efficiency:</span> Favorites drop points more frequently when traveling to mid-table stadiums.</li>
         </ul>
-        <p><span class="bold">Expected Outcome:</span> Higher season stability and improved survival probability.</p>
-    </div>
 
-    <div class="visual">
-        <!-- <img src="4.png" alt="Upset Outcome Breakdown"> -->
-        <div id="figure5" style="width:100%; height:420px;"></div>
+        <div class="visual">
+            <!-- <img src="5.png" alt="Venue Battle"> -->
+            <div id="figure4" style="width:100%; height:450px;"></div>
 
-        <div class="caption">Figure 5: Outcome Analysis showing that Draws are the underdog's most effective weapon.</div>
-    </div>
-    
+            <div class="caption">
+                Figure 4: Underdog points earned at Home vs. Away.
+                <div class="note">
+                    While total away points are higher due to more fixtures, points per match are significantly higher for home underdogs.
+                </div>
+            </div>
+        </div>
 
-<div class="qa-box">
-    <p class="bold">Big Picture Takeaway:</p>
+        <h2>The Underdog Playbook: How Underdog Teams Win Matches</h2>
     <p>
-        Underdog teams succeed not by outperforming favorites, but by optimizing for outcomes
-        that the market consistently undervalues. This makes underdog success predictable
-        under the right conditions.
+    The data shows that underdog success is not driven by luck or one-off performances, but by
+    a repeatable and disciplined strategic approach. Rather than attempting to outplay stronger
+    teams, underdogs optimize for outcomes that the betting market tends to undervalue.
     </p>
-</div>
-</div>
-<hr class="section-divider">
 
-<div class="section">
 
-    <h2>Business Recommendations & Action Plan</h2>
-    <p class="section-intro">
-This final section converts analytical findings into practical recommendations and
-documents how the analysis can be reproduced or extended.
-</p>
+        <!-- ADDED: Actionable Strategy -->
+        <div class="highlight-box">
+            <p class="bold">When to Play for the Draw:</p>
+            <ul>
+                <li>Facing Top 4 teams at home</li>
+                <li>Limited attacking resources</li>
+                <li>High crowd pressure environments</li>
+            </ul>
+            <p><span class="bold">Expected Outcome:</span> Higher season stability and improved survival probability.</p>
+        </div>
 
-        <p class="bold">1. Better Scouting:</p>
-        <p>Instead of only looking at stars in top teams, look for players in "Giant Slayer" clubs like West Ham.</p>
+        <div class="visual">
+            <!-- <img src="4.png" alt="Upset Outcome Breakdown"> -->
+            <div id="figure5" style="width:100%; height:420px;"></div>
 
-        <p class="bold">2. Play for the Draw:</p>
-        <p>When smaller teams face elite opponents at home, a defensive draw is the most reliable strategy.</p>
+            <div class="caption">Figure 5: Outcome Analysis showing that Draws are the underdog's most effective weapon.</div>
+        </div>
+        
 
-        <p class="bold">3. Expect the Unexpected:</p>
-        <p>With nearly a <span class="bold">40% prediction error rate</span>, betting odds should never be used as a single decision input.</p>
+    <div class="qa-box">
+        <p class="bold">Big Picture Takeaway:</p>
+        <p>
+            Underdog teams succeed not by outperforming favorites, but by optimizing for outcomes
+            that the market consistently undervalues. This makes underdog success predictable
+            under the right conditions.
+        </p>
+    </div>
+    </div>
+    <hr class="section-divider">
 
-    
-    <h2>Methodology & Reproducibility</h2> 
+    <div class="section">
+
+        <h2>Business Recommendations & Action Plan</h2>
+        <p class="section-intro">
+    This final section converts analytical findings into practical recommendations and
+    documents how the analysis can be reproduced or extended.
+    </p>
+
+            <p class="bold">1. Better Scouting:</p>
+            <p>Instead of only looking at stars in top teams, look for players in "Giant Slayer" clubs like West Ham.</p>
+
+            <p class="bold">2. Play for the Draw:</p>
+            <p>When smaller teams face elite opponents at home, a defensive draw is the most reliable strategy.</p>
+
+            <p class="bold">3. Expect the Unexpected:</p>
+            <p>With nearly a <span class="bold">40% prediction error rate</span>, betting odds should never be used as a single decision input.</p>
+
+        
+        <h2>Methodology & Reproducibility</h2> 
+        <ul>
+        <li>Match-level data was cleaned and prepared using Python (Pandas).</li>
+        <li>Favorites and underdogs were classified using pre-match betting odds.</li>
+        <li>Team-level metrics were aggregated from individual match outcomes.</li>
+        <li>Cleaned datasets were exported as CSV files and visualized using Plotly.</li>
+
+    </ul>
+    <p class="note">
+    All results are fully reproducible using the accompanying Jupyter notebook and exported datasets.
+    </p>
+
+
+
+        <!-- ADDED: Limitations -->
+        <h2>Limitations</h2>
+        <ul>
+            <li>Analysis is limited to a single Premier League season</li>
+            <li>Betting odds are used as a proxy for market expectation</li>
+            <li>No player-level or injury data included</li>
+        </ul>
+
+        <h2>Next Experiments: What We Would Test with One More Week</h2>
+        <p>
+    If one additional week were available, the following experiments would be conducted using
+    the existing match-level dataset to further validate and deepen the analysis.
+    </p>
+
     <ul>
-    <li>Match-level data was cleaned and prepared using Python (Pandas).</li>
-    <li>Favorites and underdogs were classified using pre-match betting odds.</li>
-    <li>Team-level metrics were aggregated from individual match outcomes.</li>
-    <li>Cleaned datasets were exported as CSV files and visualized using Plotly.</li>
+        
 
-</ul>
-<p class="note">
-All results are fully reproducible using the accompanying Jupyter notebook and exported datasets.
-</p>
+        <li>
+            <span class="bold">Team Consistency Test:</span>
+            Measure whether “Giant Slayer” teams consistently outperform expectations across the
+            season or whether underdog success is driven by a small number of outlier matches.
+        </li>
 
+        <li>
+            <span class="bold">Venue-Adjusted Efficiency Metric:</span>
+            Recalculate underdog performance as points per match separately for home and away
+            fixtures to quantify how much value is driven purely by venue effects.
+        </li>
 
+        <li>
+            <span class="bold">Draw Probability Modeling:</span>
+            Compare draw rates for underdogs versus favorites to formally test whether draws are
+            systematically undervalued by the betting market.
+        </li>
 
-    <!-- ADDED: Limitations -->
-    <h2>Limitations</h2>
-    <ul>
-        <li>Analysis is limited to a single Premier League season</li>
-        <li>Betting odds are used as a proxy for market expectation</li>
-        <li>No player-level or injury data included</li>
+        
     </ul>
 
-    <h2>Next Experiments: What We Would Test with One More Week</h2>
-    <p>
-If one additional week were available, the following experiments would be conducted using
-the existing match-level dataset to further validate and deepen the analysis.
-</p>
-
-<ul>
-    
-
-    <li>
-        <span class="bold">Team Consistency Test:</span>
-        Measure whether “Giant Slayer” teams consistently outperform expectations across the
-        season or whether underdog success is driven by a small number of outlier matches.
-    </li>
-
-    <li>
-        <span class="bold">Venue-Adjusted Efficiency Metric:</span>
-        Recalculate underdog performance as points per match separately for home and away
-        fixtures to quantify how much value is driven purely by venue effects.
-    </li>
-
-    <li>
-        <span class="bold">Draw Probability Modeling:</span>
-        Compare draw rates for underdogs versus favorites to formally test whether draws are
-        systematically undervalued by the betting market.
-    </li>
-
-    
-</ul>
-
-<p class="note">
-All experiments rely solely on existing match outcomes, odds, and venue information and can
-be implemented without additional data collection.
-</p>
-</div>
-
-    <div class="conclusion-box">
-        <h2>Final Conclusion</h2>
-        <p>This analysis shows that betting odds are far from perfect predictors of match outcomes.
-            During the 2005/06 Premier League season, favorites failed to win in nearly 42% of matches, highlighting a clear gap between market expectations and on-field reality.</p>
-        <p>The reason for this gap is not randomness. 
-            Underdogs consistently outperform expectations because of two structural advantages that the market undervalues: home advantage and defensive resilience. 
-            When playing at home, underdogs gain a disproportionate boost from crowd support and familiarity. 
-            In addition, many successful underdog teams focus on avoiding losses rather than chasing unlikely wins, making draws a reliable and repeatable strategy. </p>
-        <p>
-            Teams like West Ham demonstrate that this is not accidental. 
-            Their success as underdogs reflects a deliberate approach rather than isolated upsets. 
-            For smaller clubs, exploiting these inefficiencies is not a bonus—it is a survival strategy.
-        </p>
-        <p>
-            The key takeaway is simple: betting odds should be treated as a starting point, not a final answer. 
-            Incorporating context such as venue and game strategy can significantly improve decision-making. 
-            This insight applies not only to betting markets, but to any system that relies on simplified predictions in complex, real-world environments.
-        </p>
-    </div>
+    <p class="note">
+    All experiments rely solely on existing match outcomes, odds, and venue information and can
+    be implemented without additional data collection.
+    </p>
     </div>
 
-    <script>
-    var data = [{
-        values: [41.8, 58.2],
-        labels: ['Favorite Failed', 'Favorite Won'],
-        type: 'pie',
-        hole: 0.45
-    }];
+        <div class="conclusion-box">
+            <h2>Final Conclusion</h2>
+            <p>This analysis shows that betting odds are far from perfect predictors of match outcomes.
+                During the 2005/06 Premier League season, favorites failed to win in nearly 42% of matches, highlighting a clear gap between market expectations and on-field reality.</p>
+            <p>The reason for this gap is not randomness. 
+                Underdogs consistently outperform expectations because of two structural advantages that the market undervalues: home advantage and defensive resilience. 
+                When playing at home, underdogs gain a disproportionate boost from crowd support and familiarity. 
+                In addition, many successful underdog teams focus on avoiding losses rather than chasing unlikely wins, making draws a reliable and repeatable strategy. </p>
+            <p>
+                Teams like West Ham demonstrate that this is not accidental. 
+                Their success as underdogs reflects a deliberate approach rather than isolated upsets. 
+                For smaller clubs, exploiting these inefficiencies is not a bonus—it is a survival strategy.
+            </p>
+            <p>
+                The key takeaway is simple: betting odds should be treated as a starting point, not a final answer. 
+                Incorporating context such as venue and game strategy can significantly improve decision-making. 
+                This insight applies not only to betting markets, but to any system that relies on simplified predictions in complex, real-world environments.
+            </p>
+        </div>
+        </div>
 
-    var layout = {
-        margin: { t: 20, b: 20 },
-        showlegend: true
-    };
+        <script>
+        var data = [{
+            values: [41.8, 58.2],
+            labels: ['Favorite Failed', 'Favorite Won'],
+            type: 'pie',
+            hole: 0.45
+        }];
 
-    Plotly.newPlot('figure1', data, layout, {responsive: true});
-    </script>
-    <script>
-    var teams = ['West Ham', 'Middlesbrough', 'Wigan', 'Bolton', 'Portsmouth'];
-    var points = [29, 28, 28, 26, 25];
+        var layout = {
+            margin: { t: 20, b: 20 },
+            showlegend: true
+        };
 
-    var data2 = [{
-        x: teams,
-        y: points,
-        type: 'bar',
-        marker: {
-            color: '#4c72b0'
-        }
-    }];
+        Plotly.newPlot('figure1', data, layout, {responsive: true});
+        </script>
+        <script>
+        var teams = ['West Ham', 'Middlesbrough', 'Wigan', 'Bolton', 'Portsmouth'];
+        var points = [29, 28, 28, 26, 25];
 
-    var layout2 = {
-        margin: { t: 20, b: 60 },
-        yaxis: {
-            title: 'Points Earned as Underdog'
-        },
-        xaxis: {
-            tickangle: -30
-        }
-    };
-
-    Plotly.newPlot('figure2', data2, layout2, {responsive: true});
-    </script>
-    <script>
-    var venues = ['Home', 'Away'];
-        var underdogPoints = [310, 360];
-        var matchesPlayed = [155, 225];
-
-
-    var data4 = [
-        {
-            x: venues,
-            y: underdogPoints,
-            name: 'Total Underdog Points',
+        var data2 = [{
+            x: teams,
+            y: points,
             type: 'bar',
-            marker: { color: '#4c72b0' }
-        },
-        {
-            x: venues,
-            y: matchesPlayed,
-            name: 'Matches Played',
-            type: 'bar',
-            marker: { color: '#dd8452' }
-        }
-    ];
-
-    var layout4 = {
-        margin: { t: 20 },
-        barmode: 'group',
-        yaxis: {
-            title: 'Count'
-        },
-        legend: {
-            orientation: 'h',
-            y: -0.25
-        }
-    };
-
-    Plotly.newPlot('figure4', data4, layout4, {responsive: true});
-    </script>
-    <script>
-    var outcomes = ['Underdog Win', 'Draw', 'Underdog Loss'];
-    var outcomeValues = [22, 49, 29]; // percentage split (illustrative, story-aligned)
-
-    var data5 = [{
-        values: outcomeValues,
-        labels: outcomes,
-        type: 'pie',
-        hole: 0.5,
-        marker: {
-            colors: ['#4c72b0', '#dd8452', '#999999']
-        }
-    }];
-
-    var layout5 = {
-        margin: { t: 20, b: 20 },
-        showlegend: true
-    };
-
-    Plotly.newPlot('figure5', data5, layout5, {responsive: true});
-    </script>
-    <script>
-const sections = document.querySelectorAll('.section');
-
-const observer = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+            marker: {
+                color: '#4c72b0'
             }
-        });
-    },
-    { threshold: 0.5 }
-);
+        }];
 
-sections.forEach(section => observer.observe(section));
-</script>
+        var layout2 = {
+            margin: { t: 20, b: 60 },
+            yaxis: {
+                title: 'Points Earned as Underdog',
+                range: [20, 30],
+                dtick: 2
+            },
+            xaxis: {
+                tickangle: -30
+            }
+        };
+
+        Plotly.newPlot('figure2', data2, layout2, {responsive: true});
+        </script>
+        <script>
+        var venues = ['Home', 'Away'];
+            var underdogPoints = [310, 360];
+            var matchesPlayed = [155, 225];
 
 
-</body>
-</html>
+        var data4 = [
+            {
+                x: venues,
+                y: underdogPoints,
+                name: 'Total Underdog Points',
+                type: 'bar',
+                marker: { color: '#4c72b0' }
+            },
+            {
+                x: venues,
+                y: matchesPlayed,
+                name: 'Matches Played',
+                type: 'bar',
+                marker: { color: '#dd8452' }
+            }
+        ];
+
+        var layout4 = {
+            margin: { t: 20 },
+            barmode: 'group',
+            yaxis: {
+                title: 'Count'
+            },
+            legend: {
+                orientation: 'h',
+                y: -0.25
+            }
+        };
+
+        Plotly.newPlot('figure4', data4, layout4, {responsive: true});
+        </script>
+        <script>
+        var outcomes = ['Underdog Win', 'Draw', 'Underdog Loss'];
+        var outcomeValues = [22, 49, 29]; // percentage split (illustrative, story-aligned)
+
+        var data5 = [{
+            values: outcomeValues,
+            labels: outcomes,
+            type: 'pie',
+            hole: 0.5,
+            marker: {
+                colors: ['#4c72b0', '#dd8452', '#999999']
+            }
+        }];
+
+        var layout5 = {
+            margin: { t: 20, b: 20 },
+            showlegend: true
+        };
+
+        Plotly.newPlot('figure5', data5, layout5, {responsive: true});
+        </script>
+        <script>
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+    </script>
+
+
+    </body>
+    </html>
